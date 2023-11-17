@@ -139,11 +139,13 @@ public class Main {
             calculateBalance(new Result(playerId), matches, playerHashMap.get(playerId), legitimateActions, illegalActions, casinoBalanceList);
         }
 
+        // summing up casino final balance
         long casinoBalance = casinoBalanceList.stream().mapToLong(Long::longValue).sum();
 
         writeResultToFile(legitimateActions, illegalActions, casinoBalance);
 
     }
+
 
     public static void writeResultToFile(List<Result> legitimateActions, List<Player> illegalActions, long casinoBalance){
         clearFile();

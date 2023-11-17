@@ -8,13 +8,9 @@ public class Match {
         String[] split = lines.split(",");
         this.matchId = split[0];
 
-//        setMatchId(split[0]);
         this.rateOfA = Float.parseFloat(split[1]);
-//        setRateOfA(Float.parseFloat(split[1]));
         this.rateOfB = Float.parseFloat(split[2]);
-//        setRateOfB(Float.parseFloat(split[2]));
         this.matchResult = split[3];
-//        setMatchResult(split[3]);
 
     }
 
